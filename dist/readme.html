@@ -1,0 +1,182 @@
+<p>#Gulp watch works</p>
+<p>##Git Essentials</p>
+<p>###Git Term List</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Git Term</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Git SCM</td>
+<td style="text-align:left">Version Control System</td>
+</tr>
+<tr>
+<td style="text-align:left">Repository</td>
+<td style="text-align:left">Repo</td>
+</tr>
+<tr>
+<td style="text-align:left">Branch</td>
+<td style="text-align:left">Branch</td>
+</tr>
+<tr>
+<td style="text-align:left">Change Set</td>
+<td style="text-align:left">Set of changes</td>
+</tr>
+</tbody>
+</table>
+<p>##Git common commands used in various situations:</p>
+<hr>
+<p>###start a working area
+git | workflow
+:---|:---
+clone|      Clone a repository into a new directory
+init |      Create an empty Git repository or reinitialize an existing one</p>
+<p>###work on the current change (see also: git help everyday)</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">git</th>
+<th style="text-align:left">workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add</td>
+<td style="text-align:left">Add file contents to the index</td>
+</tr>
+<tr>
+<td style="text-align:left">mv</td>
+<td style="text-align:left">Move or rename a file, a directory, or a symlink</td>
+</tr>
+<tr>
+<td style="text-align:left">reset</td>
+<td style="text-align:left">Reset current HEAD to the specified state</td>
+</tr>
+<tr>
+<td style="text-align:left">rm</td>
+<td style="text-align:left">Remove files from the working tree and from the index</td>
+</tr>
+</tbody>
+</table>
+<p>###examine the history and state (see also: git help revisions)</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">git</th>
+<th style="text-align:left">workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p>bisect     Use binary search to find the commit that introduced a bug
+grep       Print lines matching a pattern
+log        Show commit logs
+show       Show various types of objects
+status     Show the working tree status</p>
+<p>###grow, mark and tweak your common history</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">git</th>
+<th style="text-align:left">workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">   branch</td>
+<td style="text-align:left">List, create, or delete branches</td>
+</tr>
+<tr>
+<td style="text-align:left">   checkout</td>
+<td style="text-align:left">Switch branches or restore working tree files</td>
+</tr>
+<tr>
+<td style="text-align:left">   commit</td>
+<td style="text-align:left">Record changes to the repository</td>
+</tr>
+<tr>
+<td style="text-align:left">   diff</td>
+<td style="text-align:left">Show changes between commits, commit and working tree, etc</td>
+</tr>
+<tr>
+<td style="text-align:left">   merge</td>
+<td style="text-align:left">Join two or more development histories together</td>
+</tr>
+<tr>
+<td style="text-align:left">   rebase</td>
+<td style="text-align:left">Forward-port local commits to the updated upstream head</td>
+</tr>
+<tr>
+<td style="text-align:left">   tag</td>
+<td style="text-align:left">Create, list, delete or verify a tag object signed with GPG</td>
+</tr>
+</tbody>
+</table>
+<p>###collaborate (see also: git help workflows)</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">git</th>
+<th style="text-align:left">workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">   fetch</td>
+<td style="text-align:left">Download objects and refs from another repository</td>
+</tr>
+<tr>
+<td style="text-align:left">   pull</td>
+<td style="text-align:left">Fetch from and integrate with another repository or a local branch</td>
+</tr>
+<tr>
+<td style="text-align:left">   push</td>
+<td style="text-align:left">Update remote refs along with associated objects</td>
+</tr>
+</tbody>
+</table>
+<p>###Git Workflow;
+git command | git workflow step
+-----------------|-----------------------
+git init |initializes a user directory for git version control (only once)
+git add remote
+git add .| adds all created or modified files to staging area
+git commit -m &quot;message&quot; | collects staged files into a changeset.</p>
+<p>###Git init - starts the git workflow
+Create an empty Git repository or reinitialize an existing one</p>
+<p>This command creates an empty Git repository.
+A subdirectory with the name .git directory is created. With this .git directory subdirectories for objects, refs/heads, refs/tags, and template files are created.</p>
+<p>Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates (or to move the repository to another place if --separate-git-dir is given).</p>
+<p>The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</p>
+<p>##The 3 Git Directories</p>
+<p>###Working directory: \mydir initialized with git init
+The working directory is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</p>
+<p>###Staging area: set of changes after git command: git add .
+The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. It’s sometimes referred to as the “index”, but it’s also common to refer to it as the staging area.</p>
+<p>###Origin with the master: when se
+The basic Git workflow goes something like this:</p>
+<ul>
+<li>You modify files in your working directory.</li>
+<li>You stage the files, adding snapshots of them to your staging area.</li>
+<li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.</li>
+</ul>
+<p>###Git Stages
+<img src="images/git-stages.jpg" alt="Git Status"></p>
+<p>###Git States
+<img src="images/git-states.png" alt="Git Status"></p>
+<p>###Git Checkins
+<img src="images/git-checkins.png" alt="Git Status"></p>
+<p>###Git Change sets
+<img src="images/git-changesets.png" alt="Git Status"></p>

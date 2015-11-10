@@ -1,0 +1,25 @@
+{
+  "name": "git-essentials",
+  "version": "1.0.0",
+  "description": "___\r Git Term | Description\r :---|:---\r Git SCM     |Version Control System\r Repository | Repo\r Branch | Branch\r Change Set | Set of changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanss/git-essentials.git"
+  },
+  "keywords": [],
+  "author": "Hans Schenker <hans.schenker@windowslive.com> (http://netxpert.ch)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanss/git-essentials/issues"
+  },
+  "homepage": "https://github.com/hanss/git-essentials#readme",
+  "devDependencies": {
+    "gulp-markdown": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5"
+  }
+}

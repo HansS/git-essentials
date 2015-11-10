@@ -1,3 +1,5 @@
+#Gulp watch works
+
 ##Git Essentials
 
 ###Git Term List
@@ -86,5 +88,11 @@ The basic Git workflow goes something like this:
 + You stage the files, adding snapshots of them to your staging area.
 + You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
-###Git Add: adds the file to git workflow
-![Git Status](src/images/git-stages.jpg)
+###Git Stages
+![Git Status](dist/images/git-stages.jpg)
+###Git States
+![Git Status](dist/images/git-states.png)
+###Git Checkins
+![Git Status](dist/images/git-checkins.png)
+###Git Change sets
+![Git Status](dist/images/git-changesets.png)
