@@ -24,4 +24,4 @@ The basic Git workflow goes something like this:
 + You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
 ###Git Status
-![Git Status](blob/src/master/images/git-states.png)
+![Git Status](src/images/git-states.png)
