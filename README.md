@@ -1,5 +1,5 @@
-##Git Essentials Course on Lynda
-These are common Git commands used in various situations:
+##Git Essentials
+
 ###Git Term List
 ___
 Git Term | Description
@@ -9,37 +9,52 @@ Repository | Repo
 Branch | Branch
 Change Set | Set of changes
 
-
+##Git common commands used in various situations:
+___
 ###start a working area
-+ clone      Clone a repository into a new directory
-+ init       Create an empty Git repository or reinitialize an existing one
+git | workflow
+:---|:---
+clone|      Clone a repository into a new directory
+init |      Create an empty Git repository or reinitialize an existing one
 
 ###work on the current change (see also: git help everyday)
-+  add        Add file contents to the index
-+ mv         Move or rename a file, a directory, or a symlink
-+ reset      Reset current HEAD to the specified state
-+ rm         Remove files from the working tree and from the index
+___
+git | workflow
+:---|:---
+add |       Add file contents to the index
+mv |         Move or rename a file, a directory, or a symlink
+reset |      Reset current HEAD to the specified state
+rm |         Remove files from the working tree and from the index
 
 ###examine the history and state (see also: git help revisions)
- + bisect     Use binary search to find the commit that introduced a bug
- + grep       Print lines matching a pattern
- + log        Show commit logs
- + show       Show various types of objects
- + status     Show the working tree status
+___
+git | workflow
+:---|:---
+bisect     Use binary search to find the commit that introduced a bug
+grep       Print lines matching a pattern
+log        Show commit logs
+show       Show various types of objects
+status     Show the working tree status
 
-grow, mark and tweak your common history
-   branch     List, create, or delete branches
-   checkout   Switch branches or restore working tree files
-   commit     Record changes to the repository
-   diff       Show changes between commits, commit and working tree, etc
-   merge      Join two or more development histories together
-   rebase     Forward-port local commits to the updated upstream head
-   tag        Create, list, delete or verify a tag object signed with GPG
+###grow, mark and tweak your common history
+___
+git | workflow
+:---|:---
+   branch  |   List, create, or delete branches
+   checkout|   Switch branches or restore working tree files
+   commit |    Record changes to the repository
+   diff     |  Show changes between commits, commit and working tree, etc
+   merge   |   Join two or more development histories together
+   rebase  |   Forward-port local commits to the updated upstream head
+   tag     |   Create, list, delete or verify a tag object signed with GPG
 
-collaborate (see also: git help workflows)
-   fetch      Download objects and refs from another repository
-   pull       Fetch from and integrate with another repository or a local branch
-   push       Update remote refs along with associated objects
+###collaborate (see also: git help workflows)
+___
+git | workflow
+:---|:---
+   fetch |     Download objects and refs from another repository
+   pull   |    Fetch from and integrate with another repository or a local branch
+   push |      Update remote refs along with associated objects
 
 ###Git Workflow;
 git command | git workflow step
