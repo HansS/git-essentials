@@ -58,6 +58,17 @@ git | workflow
    pull   |    Fetch from and integrate with another repository or a local branch
    push |      Update remote refs along with associated objects
 
+
+###Git Tips:
+##Commit with multiple line message
+In bash, you can use single quotes around the message, and just leave the quote open, 
+which will make bash prompt for another line, until you close the quote. 
+
+Like this:
+
+git commit -m 'Message
+goes
+here'
 ###Git Workflow;
 git command | git workflow step
 -----------------|-----------------------
